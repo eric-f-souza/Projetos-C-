@@ -1,9 +1,11 @@
 ﻿
 //List<string> listaBandas = new List<string> {"U2", "Beatles", "AC/DC" };
+using System;
+
 Dictionary<string,List<int>> listaBandasRegistradas = new Dictionary<string,List<int>>();
 listaBandasRegistradas.Add("Linkin park", new List<int>{10, 9, 9});
 listaBandasRegistradas.Add("U2", new List<int> { 8, 7, 8});
-listaBandasRegistradas.Add("Skillet", new List<int>());
+listaBandasRegistradas.Add("Skillet", new List<int>{9,9});
 
 void ExibirLogo()
 {
@@ -42,13 +44,39 @@ void Menu()
             break;
         case 3: AvaliarBanda();
             break;
-        case 4:Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerico);
+        case 4:ExibirMediaBanda();
             break;
         case -1: Console.WriteLine("Programa encerrado");
             break;
         default: Console.WriteLine("Opação invalida");
             break;
     }
+}
+
+void ExibirMediaBanda()
+{
+    Console.Clear();
+    Banerfuncao("Media das bandas");
+    Console.WriteLine("Nome da banda que deseja ver a media");
+    string banda = Console.ReadLine();
+    if (listaBandasRegistradas.ContainsKey(banda))
+    {
+        Console.WriteLine($"A banda {banda} tem a media de {listaBandasRegistradas[banda].Average()}");
+        Console.WriteLine("\nAperte uma tecla para voltar para o menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        Menu();
+
+    }
+    else
+    {
+        Console.WriteLine($"A banda {banda} não esta registrada\n");
+        Console.WriteLine("Aperte uma tecla para voltar para o menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        Menu();
+    }
+
 }
 
 void RegistrarBanda()
@@ -111,11 +139,13 @@ void AvaliarBanda()
     else
     {
         Console.WriteLine($"A banda {banda} não esta registrada\n");
-        Console.WriteLine("Digite uma tecla para voltar para o menu principal");
+        Console.WriteLine("Aperte uma tecla para voltar para o menu principal");
         Console.ReadKey();
         Console.Clear();
         Menu();
     }
     
 }
+
+
 Menu();

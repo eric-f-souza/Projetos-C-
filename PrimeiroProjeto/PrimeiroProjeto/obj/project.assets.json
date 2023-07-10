@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\eric\\.nuget\\packages\\": {}
+    "C:\\Users\\eric1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eric\\source\\repos\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
+      "projectUniqueName": "C:\\Users\\eric1\\Downloads\\Estudos\\CSharp\\Git\\Projetos-C-\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
       "projectName": "PrimeiroProjeto",
-      "projectPath": "C:\\Users\\eric\\source\\repos\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
-      "packagesPath": "C:\\Users\\eric\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eric\\source\\repos\\PrimeiroProjeto\\PrimeiroProjeto\\obj\\",
+      "projectPath": "C:\\Users\\eric1\\Downloads\\Estudos\\CSharp\\Git\\Projetos-C-\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
+      "packagesPath": "C:\\Users\\eric1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eric1\\Downloads\\Estudos\\CSharp\\Git\\Projetos-C-\\PrimeiroProjeto\\PrimeiroProjeto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eric\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eric1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
