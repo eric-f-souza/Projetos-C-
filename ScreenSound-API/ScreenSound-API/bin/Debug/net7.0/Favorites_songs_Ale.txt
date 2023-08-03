@@ -1,0 +1,6 @@
+Favorites_songs_Ale.txt
+Song: Hilltop Hoods - Artist Hilltop Hoods
+Song: Leona Lewis - Artist Leona Lewis
+Song: ScHoolboy Q - Artist ScHoolboy Q
+Song: Anne-Marie - Artist Anne-Marie
+Song: Blue - Artist Blue
