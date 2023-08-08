@@ -1,39 +1,26 @@
-﻿using System.Text;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using ByteBankIO;
 
-class Program
+partial class Program
 {
     static void Main(string[] args)
     {
-        var fileAddress = "contas.txt";
-        var numberOfBytesRead = -1;
+        var lines = File.ReadAllLines("contas2.0.txt");
+        Console.WriteLine(lines.Length);
 
-        var fileStream = new FileStream(fileAddress, FileMode.Open);
-
-        var buffer = new byte[1024];//1kb
-
-        while (numberOfBytesRead != 0)
+        /*
+        foreach (var line in lines)
         {
-            numberOfBytesRead = fileStream.Read(buffer, 0, 1024);
-            ReadingBuffer(buffer);
+            Console.WriteLine(line);
         }
+        */
 
-        fileStream.Read(buffer, 0, 1024);
+        var fileBytes = File.ReadAllBytes("contas2.0.txt");
+        Console.WriteLine($"File with {fileBytes.Length} bytes");
 
-        
-        Console.ReadLine();
-    }
+        File.WriteAllText("writeWithClassFile.txt", "Test with Write class");
 
-    static void ReadingBuffer(byte[] buffer)
-    {
-        var utf8 = new UTF8Encoding();
-
-        //foreach (var myByte in buffer)
-        //{
-        //    Console.Write(myByte);
-        //    Console.Write(" ");
-        //}
-        var text = utf8.GetString(buffer);
-        Console.Write(text);
+        Console.WriteLine("Finish");
     }
 }
